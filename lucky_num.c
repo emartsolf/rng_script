@@ -10,7 +10,7 @@ int gen_avg(uint i) {
 	int d4 = rand()%3 + 1;
 	int d6 = rand()%5 + 1;
 	int d8 = rand()%7 + 1;
-	int d10 = rand()%10;
+	int d10 = rand()%10 + 1;
 	int d12 = rand()%11 + 1;
 	int d20 = rand()%19 + 1;
 	int d100 = (rand()%10)*10;
