@@ -4,7 +4,7 @@
 #include <time.h>
 
 typedef unsigned int uint;
-final int TIMES = 1000;
+const int TIMES = 1000;
 
 int gen_avg(uint i) {
 	srand(time(NULL));
