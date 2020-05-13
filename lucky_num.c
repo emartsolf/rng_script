@@ -3,7 +3,8 @@
 #include <math.h>
 #include <time.h>
 
-typedef unsigned int uint; 
+typedef unsigned int uint;
+final int TIMES = 1000;
 
 int gen_avg(uint i) {
 	srand(time(NULL));
@@ -21,10 +22,10 @@ int gen_avg(uint i) {
 int main() {
 	int sum = 0;
 	int lucky = 0;
-	for (uint i = 0; i < 250; i++) {
+	for (uint i = 0; i < TIMES; i++) {
 		sum += gen_avg(i);
 	}
-	lucky = sum/250;
+	lucky = sum/TIMES;
 	printf("%d\n", lucky);
 	return lucky;
 }
